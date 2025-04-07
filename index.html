@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浙江旅游攻略 - 六天深度游</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 行程标题区 -->
+        <header class="trip-header">
+            <h1>浙江六天深度游</h1>
+            <div class="trip-meta">
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>行程天数：6天</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-users"></i>
+                    <span>出行人数：2人</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-wallet"></i>
+                    <span>总预算：5000元</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-plane-departure"></i>
+                    <span>出发地：深圳</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- 行程概览区 -->
+        <section class="trip-overview">
+            <h2>行程概览</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="day">Day 1-2</div>
+                    <div class="content">
+                        <h3>宁波</h3>
+                        <p>天一阁、老外滩、月湖公园</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="day">Day 3</div>
+                    <div class="content">
+                        <h3>绍兴</h3>
+                        <p>鲁迅故里、东湖景区、沈园</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="day">Day 4-5上午</div>
+                    <div class="content">
+                        <h3>杭州</h3>
+                        <p>西湖景区、灵隐寺、西溪湿地</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="day">Day 5下午</div>
+                    <div class="content">
+                        <h3>湖州</h3>
+                        <p>南浔古镇、织里古镇</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="day">Day 6</div>
+                    <div class="content">
+                        <h3>台州</h3>
+                        <p>天台山、七彩沙滩、返程</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 城市详细信息区 -->
+        <section class="city-details">
+            <div class="city-tabs">
+                <button class="tab-btn" data-city="ningbo">宁波</button>
+                <button class="tab-btn active" data-city="shaoxing">绍兴</button>
+                <button class="tab-btn" data-city="hangzhou">杭州</button>
+                <button class="tab-btn" data-city="huzhou">湖州</button>
+                <button class="tab-btn" data-city="taizhou">台州</button>
+            </div>
+
+            <!-- 城市内容面板 -->
+            <div class="city-content" id="ningbo">
+                <h2>宁波精选景点</h2>
+                <div class="spots-grid">
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>天一阁博物院</h3>
+                            <p class="price">门票：80元</p>
+                            <p class="desc">中国现存最古老的私家藏书楼，国家5A级景区</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.544936,29.874847,天一阁博物院" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波天一阁攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>宁波老外滩</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">历史文化街区，欧式建筑群，夜景优美</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.549936,29.879847,宁波老外滩" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波老外滩攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>月湖公园</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">城中绿洲，历史人文景观丰富</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.554936,29.884847,月湖公园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波月湖公园攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>七塔禅寺</h3>
+                            <p class="price">门票：免费（香火费自愿）</p>
+                            <p class="desc">千年古刹，建筑宏伟，环境清幽</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.559936,29.889847,七塔禅寺" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波七塔禅寺攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>宁波海洋世界</h3>
+                            <p class="price">门票：160元</p>
+                            <p class="desc">海洋生物展示，互动表演丰富</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.564936,29.894847,宁波海洋世界" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波海洋世界攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>宁波野生动物园</h3>
+                            <p class="price">门票：140元</p>
+                            <p class="desc">动物品种丰富，环境优美</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.569936,29.899847,宁波野生动物园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波野生动物园攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>五龙潭风景名胜区</h3>
+                            <p class="price">门票：60元</p>
+                            <p class="desc">山水风光秀美，避暑胜地</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.574936,29.904847,宁波五龙潭风景名胜区" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波五龙潭攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>樱花公园</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">春季赏樱胜地，环境优美</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.579936,29.909847,樱花公园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波樱花公园攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>宁波国际礼拜堂</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">百年教堂，哥特式建筑</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.584936,29.914847,宁波国际礼拜堂" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波国际礼拜堂攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>九峰山旅游区</h3>
+                            <p class="price">门票：80元</p>
+                            <p class="desc">登山健身好去处，视野开阔</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.589936,29.919847,九峰山旅游区" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波九峰山攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>宁波美食推荐</h2>
+                <div class="food-grid">
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>天台山美食</h3>
+                            <p class="specialty">推荐：汤圆、红膏炒年糕</p>
+                            <p class="price">人均：80元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.594936,29.924847,天台山美食" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波天台山美食" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>三横王生煎</h3>
+                            <p class="specialty">推荐：生煎包、小笼包</p>
+                            <p class="price">人均：30元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.599936,29.929847,三横王生煎" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波三横王生煎" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>乐亭日本料理</h3>
+                            <p class="specialty">推荐：刺身、寿司</p>
+                            <p class="price">人均：200元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.604936,29.934847,乐亭日本料理" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波乐亭日本料理" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>老吃货</h3>
+                            <p class="specialty">推荐：海鲜面、红膏蟹</p>
+                            <p class="price">人均：120元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.609936,29.939847,老吃货" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波老吃货" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>阿毛饭店</h3>
+                            <p class="specialty">推荐：黄鱼面、海鲜炒饭</p>
+                            <p class="price">人均：60元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.614936,29.944847,阿毛饭店" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=宁波阿毛饭店" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="city-content" id="shaoxing">
+                <h2>绍兴精选景点</h2>
+                <div class="spots-grid">
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>鲁迅故里</h3>
+                            <p class="price">门票：60元</p>
+                            <p class="desc">感受鲁迅先生的生活轨迹，包含故居、三味书屋等</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.578936,30.004847,鲁迅故里" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=鲁迅故里攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>东湖风景区</h3>
+                            <p class="price">门票：45元</p>
+                            <p class="desc">绍兴市区最大的人工湖，园林景观优美</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.584936,30.014847,绍兴东湖风景区" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=绍兴东湖风景区攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>柯岩风景区</h3>
+                            <p class="price">门票：80元</p>
+                            <p class="desc">集山水、园林、石刻于一体的5A级景区</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.558936,30.024847,柯岩风景区" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=柯岩风景区攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>沈园</h3>
+                            <p class="price">门票：40元</p>
+                            <p class="desc">陆游与唐婉"红线错"的爱情故事发生地</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.574936,30.004847,沈氏园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=绍兴沈园攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>镜湖国家城市湿地公园</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">城市中的生态绿肺，适合休闲散步</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.564936,30.014847,镜湖国家城市湿地公园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=镜湖湿地公园攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>书圣故里</h3>
+                            <p class="price">门票：30元</p>
+                            <p class="desc">王羲之故居，书法艺术圣地</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.569936,30.009847,书圣故里" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=绍兴书圣故里攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>黄酒小镇</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">体验绍兴黄酒文化，品尝特色美食</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.579936,30.019847,黄酒小镇" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=绍兴黄酒小镇攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>仓桥直街历史街区</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">保存完好的明清古街，展现水乡风貌</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.574936,30.009847,仓桥直街历史街区" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=仓桥直街攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>周恩来纪念馆</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">周恩来总理求学绍兴的历史见证</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.569936,30.014847,周恩来纪念馆" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=绍兴周恩来纪念馆攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>阳明故里</h3>
+                            <p class="price">门票：50元</p>
+                            <p class="desc">王阳明故居，心学文化发源地</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.579936,30.024847,阳明故里" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=绍兴阳明故里攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>绍兴美食推荐</h2>
+                <div class="food-grid">
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>醉玖兰亭·精细绍兴菜</h3>
+                            <p class="specialty">推荐：绍兴醉鸡、霉干菜烧肉</p>
+                            <p class="price">人均：150元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.574936,30.014847,醉玖兰亭" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=醉玖兰亭绍兴菜" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>紹越鄉宴飯莊</h3>
+                            <p class="specialty">推荐：东坡肉、清蒸白水鱼</p>
+                            <p class="price">人均：120元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.579936,30.014847,紹越鄉宴飯莊" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=绍越乡宴饭庄" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>秦晋面馆</h3>
+                            <p class="specialty">推荐：阳春面、炸酱面</p>
+                            <p class="price">人均：30元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.584936,30.014847,秦晋面馆" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=绍兴秦晋面馆" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>俞记次坞打面</h3>
+                            <p class="specialty">推荐：打面、馄饨</p>
+                            <p class="price">人均：25元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.589936,30.014847,俞记次坞打面" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=绍兴俞记次坞打面" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>高叔婆黄鱼面馆</h3>
+                            <p class="specialty">推荐：黄鱼面、小笼包</p>
+                            <p class="price">人均：35元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.594936,30.014847,高叔婆黄鱼面馆" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=绍兴高叔婆黄鱼面" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="city-content active" id="hangzhou">
+                <h2>杭州精选景点</h2>
+                <div class="spots-grid">
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>西湖景区</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">必看景点：断桥残雪、平湖秋月、三潭印月、雷峰塔</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.149953,30.242847,杭州西湖风景名胜区" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州西湖攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>灵隐寺</h3>
+                            <p class="price">门票：30元（含飞来峰景区）</p>
+                            <p class="desc">杭州最著名的古刹，香火旺盛</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.095781,30.245404,灵隐寺" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州灵隐寺攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>西溪湿地</h3>
+                            <p class="price">门票：80元</p>
+                            <p class="desc">城市中的天然氧吧，水乡风光</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.063376,30.274245,西溪国家湿地公园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州西溪湿地攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>钱江新城观光</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">每晚钱江新城灯光秀，城市地标建筑群</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.209936,30.254847,钱江新城灯光秀" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州钱江新城灯光秀攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>清河坊历史街区</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">南宋遗韵，传统美食与手工艺品集中地</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.169936,30.244847,清河坊历史文化街区" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州清河坊攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>胡雪岩故居</h3>
+                            <p class="price">门票：50元</p>
+                            <p class="desc">江南第一豪宅，展现清代建筑艺术</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.174936,30.249847,胡雪岩故居" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州胡雪岩故居攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>南宋德寿宫遗址博物馆</h3>
+                            <p class="price">门票：免费（需预约）</p>
+                            <p class="desc">了解南宋历史文化的重要场所</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.179936,30.254847,南宋德寿宫遗址博物馆" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=南宋德寿宫遗址博物馆攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>杭州亚运会博物馆</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">展示2022年杭州亚运会的历史与文化</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.184936,30.259847,杭州亚运会博物馆" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州亚运会博物馆攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>五柳巷历史街区</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">保存完好的明清古街，展现老杭州风貌</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.189936,30.264847,五柳巷历史街区" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州五柳巷攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>望江公园</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">钱塘江边观景绝佳地，可观潮</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.194936,30.269847,望江公园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州望江公园攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>杭州美食推荐</h2>
+                <div class="food-grid">
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>楼外楼</h3>
+                            <p class="specialty">推荐：西湖醋鱼、东坡肉</p>
+                            <p class="price">人均：300元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.149847,30.244273,楼外楼" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州楼外楼攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>知味观</h3>
+                            <p class="specialty">推荐：小笼包、片儿川</p>
+                            <p class="price">人均：100元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.154936,30.249847,知味观" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州知味观攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>杭儿风</h3>
+                            <p class="specialty">推荐：龙井虾仁、叫化童子鸡</p>
+                            <p class="price">人均：150元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.159936,30.254847,杭儿风" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州杭儿风攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>胜利河美食街</h3>
+                            <p class="specialty">推荐：各类地道杭帮小吃</p>
+                            <p class="price">人均：50-100元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.164936,30.259847,胜利河美食街" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州胜利河美食街攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>德悦海鲜</h3>
+                            <p class="specialty">推荐：阳澄湖大闸蟹、清蒸海鲜</p>
+                            <p class="price">人均：200元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.169936,30.264847,德悦海鲜" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=杭州德悦海鲜攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="city-content" id="huzhou">
+                <h2>湖州精选景点</h2>
+                <div class="spots-grid">
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>南浔古镇</h3>
+                            <p class="price">门票：100元</p>
+                            <p class="desc">江南水乡古镇，小桥流水人家，百年老宅</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.478936,30.854847,南浔古镇" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=南浔古镇攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>仁皇山景区</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">湖州市区最高峰，人文景观与自然风光兼具</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.089936,30.864847,仁皇山景区" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=湖州仁皇山攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>太湖龙之梦乐园</h3>
+                            <p class="price">门票：220元</p>
+                            <p class="desc">大型主题乐园，含水上乐园和冰雪世界</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.094936,30.869847,太湖龙之梦乐园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=太湖龙之梦乐园攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>湖州太湖旅游度假区</h3>
+                            <p class="price">门票：免费（景区内项目另收费）</p>
+                            <p class="desc">太湖风光，休闲度假胜地</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.099936,30.874847,湖州太湖旅游度假区" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=湖州太湖旅游度假区攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>衣裳街历史文化街区</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">展现湖州丝绸文化的特色街区</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.104936,30.879847,衣裳街历史文化街区" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=湖州衣裳街攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>湖州铁佛寺</h3>
+                            <p class="price">门票：免费（香火费自愿）</p>
+                            <p class="desc">千年古刹，湖州佛教文化中心</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.109936,30.884847,湖州铁佛寺" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=湖州铁佛寺攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>太湖月亮湾</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">太湖边观景、休闲的好去处</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.114936,30.889847,湖州太湖旅游度假区-太湖月亮湾" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=湖州太湖月亮湾攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>长田漾湿地公园</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">城市生态湿地，观鸟摄影胜地</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.119936,30.894847,长田漾湿地公园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=湖州长田漾湿地公园攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>龙之梦动物世界</h3>
+                            <p class="price">门票：160元</p>
+                            <p class="desc">大型野生动物主题公园</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.124936,30.899847,龙之梦动物世界" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=湖州龙之梦动物世界攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>飞英公园</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">市区休闲好去处，园林景观优美</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.129936,30.904847,飞英公园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=湖州飞英公园攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>湖州美食推荐</h2>
+                <div class="food-grid">
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>麒麟世家潜山山庄</h3>
+                            <p class="specialty">推荐：太湖三白、腌笃鲜</p>
+                            <p class="price">人均：180元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.134936,30.909847,麒麟世家潜山山庄" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=湖州麒麟世家潜山山庄" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>埭溪老街传统美食</h3>
+                            <p class="specialty">推荐：白水鱼、湖州排骨</p>
+                            <p class="price">人均：100元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.139936,30.914847,埭溪老街传统美食" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=湖州埭溪老街美食" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>東大方</h3>
+                            <p class="specialty">推荐：东坡肉、糯米藕</p>
+                            <p class="price">人均：150元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.144936,30.919847,東大方" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=湖州東大方" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>范姐饺子</h3>
+                            <p class="specialty">推荐：鲜肉大馄饨、三鲜饺子</p>
+                            <p class="price">人均：40元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.149936,30.924847,范姐饺子" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=湖州范姐饺子" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>安吉土菜馆</h3>
+                            <p class="specialty">推荐：竹笋炒肉、山野菜</p>
+                            <p class="price">人均：80元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=120.154936,30.929847,安吉土菜馆" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=湖州安吉土菜馆" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="city-content" id="taizhou">
+                <h2>台州精选景点</h2>
+                <div class="spots-grid">
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>台州方特狂野大陆</h3>
+                            <p class="price">门票：220元</p>
+                            <p class="desc">大型主题乐园，刺激项目和表演众多</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.420936,28.654847,台州方特狂野大陆" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州方特狂野大陆攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>黄岩石窟</h3>
+                            <p class="price">门票：60元</p>
+                            <p class="desc">国家重点文物保护单位，石窟艺术精湛</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.425936,28.659847,黄岩石窟" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=黄岩石窟攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>台州海洋世界</h3>
+                            <p class="price">门票：120元</p>
+                            <p class="desc">海洋生物展示和表演，适合亲子游玩</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.430936,28.664847,台州海洋世界" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州海洋世界攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>台州博物馆</h3>
+                            <p class="price">门票：免费（需要预约）</p>
+                            <p class="desc">展示台州历史文化，建筑设计独特</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.435936,28.669847,台州博物馆" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州博物馆攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>海门老街</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">历史文化街区，保留传统建筑风貌</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.440936,28.674847,海门老街" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州海门老街攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>路桥十里长街</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">商业文化街区，美食购物好去处</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.445936,28.679847,路桥十里长街" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州路桥十里长街攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>台州老粮坊文创园</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">文创园区，老建筑改造，文艺气息浓厚</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.450936,28.684847,台州老粮坊文创园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州老粮坊文创园攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>椒江云西公园</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">城市公园，运动休闲好去处</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.455936,28.689847,椒江云西公园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州椒江云西公园攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>和合公园</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">城市绿肺，环境优美，适合散步</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.460936,28.694847,和合公园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州和合公园攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spot-card">
+                        <div class="spot-info">
+                            <h3>台州植物园</h3>
+                            <p class="price">门票：免费</p>
+                            <p class="desc">植物品种丰富，环境优美宜人</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.465936,28.699847,台州植物园" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州植物园攻略" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>台州美食推荐</h2>
+                <div class="food-grid">
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>好先生焗海鲜</h3>
+                            <p class="specialty">推荐：焗龙虾、海鲜大咖</p>
+                            <p class="price">人均：150元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.470936,28.704847,好先生焗海鲜" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州好先生焗海鲜" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>老台州</h3>
+                            <p class="specialty">推荐：台州小吃、手工年糕</p>
+                            <p class="price">人均：60元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.475936,28.709847,老台州" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州老台州美食" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>文华小渔村</h3>
+                            <p class="specialty">推荐：清蒸海鲜、海鲜面</p>
+                            <p class="price">人均：120元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.480936,28.714847,文华小渔村" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州文华小渔村" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>刻龙果木烤鸭</h3>
+                            <p class="specialty">推荐：果木烤鸭、烤鸭套餐</p>
+                            <p class="price">人均：100元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.485936,28.719847,刻龙果木烤鸭" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州刻龙果木烤鸭" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-info">
+                            <h3>黄岩姐妹酸菜鱼</h3>
+                            <p class="specialty">推荐：酸菜鱼、毛血旺</p>
+                            <p class="price">人均：80元</p>
+                            <div class="links">
+                                <a href="https://uri.amap.com/navigation?to=121.490936,28.724847,黄岩姐妹酸菜鱼" target="_blank" class="btn map-btn">
+                                    <i class="fas fa-map-marker-alt"></i> 导航
+                                </a>
+                                <a href="https://www.xiaohongshu.com/search_result?keyword=台州黄岩姐妹酸菜鱼" target="_blank" class="btn guide-btn">
+                                    <i class="fas fa-book"></i> 攻略
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 实用信息区 -->
+        <section class="useful-info">
+            <h2>实用信息</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i class="fas fa-exclamation-circle"></i> 出行建议</h3>
+                    <ul>
+                        <li>建议下载高德地图和小红书APP</li>
+                        <li>准备防晒用品和舒适的步行鞋</li>
+                        <li>景点门票建议提前在网上预订</li>
+                        <li>建议避开节假日高峰期</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-phone-alt"></i> 紧急联系</h3>
+                    <ul>
+                        <li>急救电话：120</li>
+                        <li>报警电话：110</li>
+                        <li>消防电话：119</li>
+                        <li>旅游咨询：12301</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 打印按钮 -->
+        <div class="print-section">
+            <button onclick="window.print()" class="print-btn">
+                <i class="fas fa-print"></i> 打印行程
+            </button>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html> 
+</html> 

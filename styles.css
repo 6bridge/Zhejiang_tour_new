@@ -1,0 +1,299 @@
+/* 基础样式 */
+:root {
+    --primary-color: #1890ff;
+    --secondary-color: #52c41a;
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+    --border-color: #e8e8e8;
+    --shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 标题区域 */
+.trip-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: var(--light-gray);
+    border-radius: 8px;
+}
+
+.trip-header h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.trip-meta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.meta-item i {
+    color: var(--primary-color);
+}
+
+/* 时间线样式 */
+.timeline {
+    position: relative;
+    margin: 40px 0;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item .day {
+    flex: 0 0 100px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.timeline-item .content {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 2px solid var(--primary-color);
+}
+
+/* 城市内容面板 */
+.city-content {
+    display: none;
+}
+
+.city-content.active {
+    display: block;
+}
+
+/* 标签页样式优化 */
+.city-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 12px 24px;
+    border: none;
+    background: var(--light-gray);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tab-btn:hover {
+    background: #e6f7ff;
+    color: var(--primary-color);
+}
+
+.tab-btn.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* 景点卡片优化 */
+.spots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.spot-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: all 0.3s;
+    border: 1px solid var(--border-color);
+}
+
+.spot-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.spot-info, .food-info {
+    padding: 20px;
+}
+
+.spot-info h3, .food-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #f5222d;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.desc {
+    margin: 10px 0;
+    color: #666;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.map-btn {
+    background: var(--primary-color);
+    color: white;
+}
+
+.guide-btn {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* 实用信息区 */
+.useful-info {
+    margin-top: 40px;
+    padding: 20px;
+    background: var(--light-gray);
+    border-radius: 8px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.info-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-card ul {
+    list-style: none;
+}
+
+.info-card li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.info-card li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* 打印按钮 */
+.print-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.print-btn {
+    padding: 12px 24px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.print-btn:hover {
+    background: #096dd9;
+}
+
+/* 打印样式 */
+@media print {
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .print-btn {
+        display: none;
+    }
+
+    .spot-card, .food-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .city-tabs {
+        display: none;
+    }
+
+    .city-content {
+        display: block !important;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        border: 1px solid #ccc;
+        color: #333;
+        background: none;
+    }
+} 
